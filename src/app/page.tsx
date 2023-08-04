@@ -3,8 +3,8 @@ import Image from 'next/image'
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-4">
-    <h1>Crack SSB!</h1>
-        <div className="max-w-screen-xl w-full mx-auto flex-wrap justify-center gap-8 p-4">
+    <h1 >Crack SSB!</h1>
+        <div className="max-w-screen-xl w-full mx-auto flex-wrap justify-center gap-8 p-4 ">
            <div className='text-center text-4xl'>
             <h2>Explore.</h2>
            </div>
