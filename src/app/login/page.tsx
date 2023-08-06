@@ -8,7 +8,7 @@ export default function Login(){
         <>
         <div className="align-center">
             <div className="flex items-center justify-center h-screen text-md w-60vw">
-                <form className="p-5 shadow-lg">
+                <form className="p-5 w-80">
                 <h1 className="text-center text-xl text-blue-500 font-bold ">LOGIN HERE 🎯</h1>
                  <input
                  className=" font-bold w-full py-2 px-4  mt-4 mb-4 border border-solid rounded-lg  border-gray-400 border-2"
