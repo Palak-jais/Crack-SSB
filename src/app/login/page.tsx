@@ -1,11 +1,13 @@
 "use client"
 import React, { useState } from "react";
+import Layout from "../../../components/layout";
 export default function Login(){
     const [email,setEmail]=useState("");
     const [password,setPassword]=useState("");
 
     return(
         <>
+        <Layout/>
         <div className="align-center">
             <div className="flex items-center justify-center h-screen text-md w-60vw">
                 <form className="p-5 w-80">
