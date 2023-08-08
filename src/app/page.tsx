@@ -1,18 +1,25 @@
 import React from 'react'
-import Image from 'next/image'
+import Layout from '../../components/layout'
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-4">
-    <h1 >Crack SSB!</h1>
+
+    <main className="flex min-h-screen flex-col  justify-between p-4">
+      <Layout/>
+      <div className='flex justify-between'>
+        <div className='text-center'>
+         <h1 className='text-3xl text-blue-700 font-semibold mt-20'>Welcome to Crack SSB !</h1>
+         <button className='bg-blue-500 text-white px-4 py-2 rounded-md mt-5 hover:opacity-75'>Get Started for Free </button>
+        </div>
+       <img
+        src="/soldier.png"
+        alt="logo"
+        style={{ width: '100vh', height:'80vh' }}
+       />
+        </div>     
         <div className="max-w-screen-xl w-full mx-auto flex-wrap justify-center gap-8 p-4 ">
-           <div className='text-center text-4xl'>
-            <h2>Explore.</h2>
-           </div>
            <div className='text-center text-sm mt-4'>         
             <p>Push your limitations to become a defence officer.</p>
-           </div>
-           <div  className='text-center mt-5'>
-           <button className='bg-black text-white px-4 py-2 rounded-md'>Get Started for Free </button>
            </div>
            <div className="flex flex-wrap p-10">
           <div className="lg:w-1/3 pr-4 pl-4 md:w-1/2 sm:w-1/2 p-2">
