@@ -1,10 +1,32 @@
 "use client"
 import React, { useState } from "react";
+import axios from "axios";
 import Layout from "../../../components/layout";
+import Swal from "sweetalert2";
 export default function Login(){
     const [email,setEmail]=useState("");
     const [password,setPassword]=useState("");
     const[username,setUsername]=useState("");
+
+    const onSignup=async()=>{
+      try{       
+          const res=await axios.post("/api/users/signup",{username,email,password});
+           console.log("sucesss",res.data);
+           Swal.fire({
+            icon: 'success',
+            title: 'Congratulations..',
+            text: 'Signed In!',
+           
+          })
+      }catch(error:any){
+          console.log("signup failed",error.message);
+          Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Something went wrong!',
+          })
+      }
+  }
     return(
         <>
         <div className="align-center">
@@ -17,7 +39,7 @@ export default function Login(){
                  type="text"
                  name="username"
                  placeholder="Enter your Username"
-                 onChange={(e)=>setEmail(e.target.value)}
+                 onChange={(e)=>setUsername(e.target.value)}
                   />
                  <input
                  className=" font-bold w-full py-2 px-4  mt-4 mb-4 border border-solid rounded-lg  border-gray-400 border-2"
@@ -34,7 +56,7 @@ export default function Login(){
                  onChange={(e)=>setPassword(e.target.value)}
                   />
                   <div className="text-center">
-                    <button className="bg-blue-500 text-white font-semibold py-2 px-4 rounded-lg w-full hover:opacity-75">SIGN UP</button>
+                    <button onClick={onSignup} className="bg-blue-500 text-white font-semibold py-2 px-4 rounded-lg w-full hover:opacity-75">SIGN UP</button>
                   </div>
                 </form>
             </div>
