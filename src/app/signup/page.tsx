@@ -8,7 +8,8 @@ export default function Login(){
     const [password,setPassword]=useState("");
     const[username,setUsername]=useState("");
 
-    const onSignup=async()=>{
+    const onSignup=async(e:any)=>{
+     e.preventDefault();
       try{       
           const res=await axios.post("/api/users/signup",{username,email,password});
            console.log("sucesss",res.data);
