@@ -13,9 +13,10 @@ const Layout = () => {
               <ul className='flex p-5'>
               <Link className="pl-4 pl-4 text-blue-500 font-semibold hover:opacity-75" href="/">HOME</Link>
               <Link className="pl-4 pl-4 text-blue-500 font-semibold hover:opacity-75" href="/explore">EXPLORE</Link>
-                <Link className="pl-4 pl-4 text-blue-500 font-semibold hover:opacity-75" href="/login">LOGIN</Link>
-                <Link className="pl-4 pl-4 text-blue-500 font-semibold hover:opacity-75" href="/signup">REGISTER</Link>
-                <Link className="pl-4 pl-4 text-blue-500 font-semibold hover:opacity-75" href="/profile">PROFILE</Link>
+              <Link className="pl-4 pl-4 text-blue-500 font-semibold hover:opacity-75" href="/bot">ASKBOT</Link>
+              <Link className="pl-4 pl-4 text-blue-500 font-semibold hover:opacity-75" href="/login">LOGIN</Link>
+              <Link className="pl-4 pl-4 text-blue-500 font-semibold hover:opacity-75" href="/signup">REGISTER</Link>
+              <Link className="pl-4 pl-4 text-blue-500 font-semibold hover:opacity-75" href="/profile">PROFILE</Link>
               </ul>
      </div>
     </nav>

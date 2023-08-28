@@ -1,6 +1,6 @@
 "use client"
 import React, { useState } from "react";
-import Layout from "../../../components/layout";
+import Layout from "../../../components/ui/layout";
 import axios from "axios";
 import Swal from "sweetalert2";
 export default function Login(){
