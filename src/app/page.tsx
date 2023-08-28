@@ -1,5 +1,5 @@
 import React from 'react'
-import Layout from '../../components/layout'
+import Layout from '../../components/ui/layout'
 import Footer from '../../components/ui/footer'
 import Link from 'next/link'
 export default function Home() {

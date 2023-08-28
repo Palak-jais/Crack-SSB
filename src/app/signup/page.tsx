@@ -1,7 +1,7 @@
 "use client"
 import React, { useState } from "react";
 import axios from "axios";
-import Layout from "../../../components/layout";
+import Layout from "../../../components/ui/layout";
 import Swal from "sweetalert2";
 export default function Login(){
     const [email,setEmail]=useState("");
