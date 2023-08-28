@@ -1,10 +1,31 @@
 "use client"
 import React, { useState } from "react";
 import Layout from "../../../components/layout";
+import axios from "axios";
+import Swal from "sweetalert2";
 export default function Login(){
     const [email,setEmail]=useState("");
     const [password,setPassword]=useState("");
-
+    const onLogin=async(e:any)=>{
+      e.preventDefault();
+       try{       
+           const res=await axios.post("/api/users/login",{email,password});
+            console.log("sucesss",res.data);
+            Swal.fire({
+             icon: 'success',
+             title: 'Congratulations..',
+             text: 'Signed In!',
+            
+           })
+       }catch(error:any){
+           console.log("signup failed",error.message);
+           Swal.fire({
+             icon: 'error',
+             title: 'Oops...',
+             text: 'Something went wrong!',
+           })
+       }
+   }
     return(
         <>
         <Layout/>
@@ -27,7 +48,7 @@ export default function Login(){
                  onChange={(e)=>setPassword(e.target.value)}
                   />
                   <div className="text-center">
-                    <button className="bg-blue-500 text-white font-semibold py-2 px-4 rounded-lg w-full hover:opacity-75">LOGIN</button>
+                    <button onClick={onLogin} className="bg-blue-500 text-white font-semibold py-2 px-4 rounded-lg w-full hover:opacity-75">LOGIN</button>
                   </div>
                 </form>
             </div>
