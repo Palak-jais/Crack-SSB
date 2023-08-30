@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from 'react';
 
-const TYPING_DELAY = 80; // Delay between typing each character
-const STRING_CHANGE_DELAY = 100; // Delay before switching to the next string
+const TYPING_DELAY = 100; // Delay between typing each character
+const STRING_CHANGE_DELAY = 200; // Delay before switching to the next string
 
 function TypingEffect() {
     
   const stringsToType = [
-    "Welcome to CrackSSB",
-    "Ace your interview Prepration",
-    "Explore section relevent to your demand.",
-    "Learn and test in one platform.",
+    "Hello Cadet,Welcome to CrackSSB👏",
+    "Ace your interview Prepration with us!",
+    "Explore section relevent to your preparation!",
+    "Learn and test in one platform!",
   ];
 
   const [currentStringIndex, setCurrentStringIndex] = useState(0);
@@ -34,8 +34,8 @@ function TypingEffect() {
   }, [currentIndex, currentStringIndex, stringsToType]);
 
   return (
-    <div className="p-10 text-center">
-      <h1 className='text-3xl text-blue-700 font-semibold m-10'>{typedText}</h1>
+    <div className="p-10">
+      <h1 className='text-3xl text-blue-700 font-bold m-10'>{typedText}</h1>
     </div>
   );
 }

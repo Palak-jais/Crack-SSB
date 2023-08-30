@@ -1,12 +1,15 @@
 import React from 'react'
+import Link from 'next/link'
 import Layout from '../../../components/ui/layout'
 export default  function Explore(){
+  const chatUrl:string="https://ssbchat.vercel.app/"
     return <>
     <Layout/>
-    <div className='text-center text-2xl text-blue-700  font-bold'>
-        <h1>
+    <div className='text-center '>
+        <h1 className='text-center mb-10 text-2xl text-blue-700  font-bold'>
             Explore to Ace your personality!
         </h1>
+        <Link href={chatUrl} className='bg-blue-500 text-white  font-bold px-4 py-2 rounded-md mt-5 hover:opacity-75 m-5'>Ask AI about SSB </Link>
     </div>
     <div className="flex flex-wrap p-10">
     <div className="lg:w-1/3 pr-4 pl-4 md:w-1/2 sm:w-1/2 p-2">
