@@ -17,6 +17,7 @@ export default function Login(){
             icon: 'success',
             title: 'Congratulations..',
             text: 'Signed In!',
+            confirmButtonColor: '#1e2f97',
            
           })
       }catch(error:any){
@@ -24,6 +25,7 @@ export default function Login(){
           Swal.fire({
             icon: 'error',
             title: 'Oops...',
+            confirmButtonColor: '#1e2f97',
             text: 'Something went wrong!',
           })
       }

@@ -28,7 +28,17 @@ const userSchema=new mongoose.Schema({
     },
     tag:{
         type:String,
-    }
+        default:"Ex-Conference out"
+    },
+    gender:{
+        type:String,
+        default:"Gender"
+    },
+    Address:{
+        type:String,
+        default:"Ex-Pune,Maharashtra"
+    },
+
 })
 const User=mongoose.model("users",userSchema);
 
