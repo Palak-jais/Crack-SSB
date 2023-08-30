@@ -21,21 +21,24 @@ body {
 font-family: 'Nunito';
 }
 .custombg {
-  background-image: url('https://th.bing.com/th/id/R.3ca3c35333db231b7ae57de6895c4c87?rik=8fqnIOYFOHmVGw&riu=http%3a%2f%2fwww.militarydiscountscentral.com%2fwp-content%2fuploads%2f2012%2f03%2fsoldier-saluting.jpg&ehk=aA5xKaQEiKBDV65YszCLfH2QCQ2ssY0sjBuV0QLGL7Y%3d&risl=&pid=ImgRaw&r=0');
+  background-image: url('https://cdn.wallpapersafari.com/9/18/iLVBIR.jpg');
   background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
+  height: 100vh;
 }
 .typed{
   text-transform: uppercase;
   letter-spacing: 1px;
   height: 300px;
-  padding: 30px;
+  padding: 20px;
   padding-left: 60px;
   font-weight: 600;
   text-align: left;
 
 }
 .header{
-  margin-top:100px;
+  margin-top:50px;
+  text-align: center;
 }
 
