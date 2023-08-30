@@ -14,6 +14,7 @@ export default function Login(){
             Swal.fire({
              icon: 'success',
              title: 'Congratulations..',
+             confirmButtonColor: '#1e2f97',
              text: 'Signed In!',
             
            })
@@ -22,7 +23,8 @@ export default function Login(){
            Swal.fire({
              icon: 'error',
              title: 'Oops...',
-             text: 'Something went wrong!',
+             confirmButtonColor: '#1e2f97',
+             text: `${error}`,
            })
        }
    }
@@ -34,10 +36,9 @@ export default function Login(){
                 <form className="p-5 w-80">
                 <h1 className="text-center text-xl text-blue-500 font-bold ">LOGIN HERE 🎯</h1>
                  <input
-                 className=" font-bold w-full py-2 px-4  mt-4 mb-4 border border-solid rounded-lg  border-gray-400 border-2"
-                 type="email"
-                 name="email"
-                 placeholder="Enter your email"
+                   className=" font-bold w-full py-2 px-4  mt-4 mb-4 border border-solid rounded-lg  border-gray-400 border-2"
+                   type="email"
+                   name="email"
                  onChange={(e)=>setEmail(e.target.value)}
                   />
                 <input
