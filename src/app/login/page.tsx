@@ -19,12 +19,12 @@ export default function Login(){
             
            })
        }catch(error:any){
-           console.log("signup failed",error.message);
+           console.log(error);
            Swal.fire({
              icon: 'error',
              title: 'Oops...',
              confirmButtonColor: '#1e2f97',
-             text: `${error}`,
+             text: `${error.response.data.message}`,
            })
        }
    }

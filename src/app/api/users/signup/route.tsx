@@ -11,9 +11,14 @@ try{
     const {username,email,password}=reqBody
     console.log(reqBody);
 
+    const u=await User.findOne({username});
+    if(u){
+        return NextResponse.json({message:"User name exists"},{status:400})
+    }
+
     const user=await User.findOne({email});
     if(user){
-        return NextResponse.json({error:"User exists"},{status:400})
+        return NextResponse.json({message:"Email exists"},{status:400})
     }
     
 
@@ -33,6 +38,6 @@ try{
 }
 catch(err:any){
     console.log(err);
-    return NextResponse.json({error:err.message},{status:500})
+    return NextResponse.json({message:"something went wrong"},{status:500})
 }    
 }
