@@ -1,6 +1,7 @@
 import { connect } from "@/dbcongig/dbconfig";
 import User from '@/models/userModel';
 import { NextRequest,NextResponse } from "next/server";
+import bcryptjs from 'bcryptjs'
 
 connect();
 
@@ -13,20 +14,21 @@ try{
     const user=await User.findOne({email});
     console.log(user);
     if(!user){
-        return NextResponse.json({error:"User not exists"},{status:400})
+        return NextResponse.json({message:"User not exists"},{status:400})
     }
     console.log(user.email);
-    /*
-    if(user.password!=password){
-        return NextResponse.json({error:"Incorrect password"},{status:400})
-    }
-    */
+   const userPassword:any=user.password;
+   const validPassword= await bcryptjs.compare(password,userPassword);
+   console.log(validPassword);
+   if(!validPassword){
+       return NextResponse.json({message:"Incorrect password"},{status:400});
+   }
     console.log(user.password);
     console.log("LogggedIn Sucessfull");
     return NextResponse.json({message:"User logged In"},{status:201})
 }
 catch(err:any){
     console.log(err);
-    return NextResponse.json({error:err.message},{status:500})
+    return NextResponse.json({message:"something went wrong"},{status:500})
 }    
 }
