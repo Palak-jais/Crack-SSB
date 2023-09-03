@@ -3,7 +3,9 @@ import React, { useState} from "react";
 import Layout from "../../../components/ui/layout";
 import axios from "axios";
 import Swal from "sweetalert2";
+import { useRouter } from "next/navigation";
 export default function Login(){
+  const router=useRouter();
     const [email,setEmail]=useState("");
     const [password,setPassword]=useState("");   
     const onLogin=async(e:any)=>{
@@ -11,13 +13,15 @@ export default function Login(){
        try{    
            const res=await axios.post("/api/users/login",{email,password});
             console.log("sucesss",res.data);
-            Swal.fire({
+            await Swal.fire({
              icon: 'success',
              title: 'Congratulations..',
              confirmButtonColor: '#1e2f97',
              text: 'Signed In!',
             
            })
+           router.refresh();
+           router.push("/explore");
        }catch(error:any){
            console.log(error);
            Swal.fire({
