@@ -1,14 +1,14 @@
 "use client"
-import React, { useState } from "react";
+import React, { useState} from "react";
 import Layout from "../../../components/ui/layout";
 import axios from "axios";
 import Swal from "sweetalert2";
 export default function Login(){
     const [email,setEmail]=useState("");
-    const [password,setPassword]=useState("");
+    const [password,setPassword]=useState("");   
     const onLogin=async(e:any)=>{
       e.preventDefault();
-       try{       
+       try{    
            const res=await axios.post("/api/users/login",{email,password});
             console.log("sucesss",res.data);
             Swal.fire({

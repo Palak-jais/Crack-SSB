@@ -2,6 +2,7 @@ import { connect } from "@/dbcongig/dbconfig";
 import User from '@/models/userModel';
 import { NextRequest,NextResponse } from "next/server";
 import bcryptjs from 'bcryptjs'
+import jwt from 'jsonwebtoken'
 
 connect();
 
@@ -25,10 +26,23 @@ try{
    }
     console.log(user.password);
     console.log("LogggedIn Sucessfull");
-    return NextResponse.json({message:"User logged In"},{status:201})
+    const tokenData={
+        id:user._id,
+        username:user.username,
+        email:user.email
+    }
+    
+    const token=await jwt.sign(tokenData,process.env.JWT_SECRET_TOKEN!,{
+        expiresIn:"1d"
+    })
+    const resp = NextResponse.json({message:"User logged In"},{status:201});
+    resp.cookies.set("token",token,{
+        httpOnly:true,
+    })
+     return resp;  
 }
 catch(err:any){
-    console.log(err);
+   // console.log(err);
     return NextResponse.json({message:"something went wrong"},{status:500})
 }    
 }

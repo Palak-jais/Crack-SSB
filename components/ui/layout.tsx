@@ -16,6 +16,7 @@ const Layout = () => {
               <Link className="pl-4 pl-4 text-blue-700 font-bold hover:opacity-75" href="/login">LOGIN</Link>
               <Link className="pl-4 pl-4 text-blue-700 font-bold hover:opacity-75" href="/signup">REGISTER</Link>
               <Link className="pl-4 pl-4 text-blue-700 font-bold hover:opacity-75" href="/profile">PROFILE</Link>
+              <Link className="pl-4 pl-4 text-blue-700 font-bold hover:opacity-75" href="/logout">LOGOUT</Link>
               </ul>
      </div>
     </nav>
