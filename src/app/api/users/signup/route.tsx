@@ -9,7 +9,7 @@ export async function POST(request:NextRequest) {
 try{
     const reqBody=await request.json()
     const {username,email,password}=reqBody
-    console.log(reqBody);
+    //console.log(reqBody);
 
     const u=await User.findOne({username});
     if(u){
@@ -30,14 +30,12 @@ try{
             username,
             email,
             password:hashPassword
-        })
-        
-        const saveUser=await newUser.save()
-        console.log(saveUser);
+        })       
+        await newUser.save();
         return NextResponse.json({message:"User created"},{status:201})
 }
 catch(err:any){
-    console.log(err);
+    //console.log(err);
     return NextResponse.json({message:"something went wrong"},{status:500})
 }    
 }

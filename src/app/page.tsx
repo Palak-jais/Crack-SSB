@@ -3,7 +3,6 @@ import React from 'react'
 import Layout from '../../components/ui/layout'
 import Footer from '../../components/ui/footer'
 import Link from 'next/link'
-
 import TypingEffect from '../../components/ui/typing'
 export default function Home() {
   const chatUrl:string="https://ssbchat.vercel.app/"

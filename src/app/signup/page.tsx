@@ -1,5 +1,5 @@
 "use client"
-import React, { useState } from "react";
+import React, { useState} from "react";
 import axios from "axios";
 import Layout from "../../../components/ui/layout";
 import Swal from "sweetalert2";
@@ -7,7 +7,6 @@ export default function Login(){
     const [email,setEmail]=useState("");
     const [password,setPassword]=useState("");
     const[username,setUsername]=useState("");
-
     const onSignup=async(e:any)=>{
      e.preventDefault();
       try{       
