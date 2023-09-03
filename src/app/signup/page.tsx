@@ -3,22 +3,25 @@ import React, { useState} from "react";
 import axios from "axios";
 import Layout from "../../../components/ui/layout";
 import Swal from "sweetalert2";
+import { useRouter } from "next/navigation";
 export default function Login(){
     const [email,setEmail]=useState("");
     const [password,setPassword]=useState("");
     const[username,setUsername]=useState("");
+    const router=useRouter();
     const onSignup=async(e:any)=>{
      e.preventDefault();
       try{       
           const res=await axios.post("/api/users/signup",{username,email,password});
            console.log("sucesss",res.data);
-           Swal.fire({
+          await Swal.fire({
             icon: 'success',
             title: 'Congratulations..',
             text: 'Signed In!',
-            confirmButtonColor: '#1e2f97',
-           
+            confirmButtonColor: '#1e2f97',          
           })
+          router.refresh();
+          router.push('/explore');
       }catch(error:any){
         console.log(error);
           console.log("signup failed",error.message);

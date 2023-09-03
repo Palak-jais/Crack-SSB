@@ -3,18 +3,21 @@ import React from "react";
 import axios from "axios";
 import Swal from "sweetalert2";
 import Layout from "../../../components/ui/layout";
+import { useRouter } from "next/navigation";
   export default function Logout(){
+    const router=useRouter();
     const onLogout=async()=>{
        try{       
            const res=await axios.get("/api/users/logout");
             console.log("sucesss",res.data);
-            Swal.fire({
+            await Swal.fire({
              icon: 'success',
              title: 'Logged Out..',
              confirmButtonColor: '#1e2f97',
              text: 'Logged out sucessfully!',
             
            })
+           router.refresh();
        }catch(error:any){
            console.log(error);
            Swal.fire({
