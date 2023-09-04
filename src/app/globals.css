@@ -18,7 +18,7 @@
 
 
 body {
-font-family: 'Nunito';
+font-family:monospace;
 }
 .custombg {
   background-image: url('https://cdn.wallpapersafari.com/9/18/iLVBIR.jpg');
@@ -35,10 +35,14 @@ font-family: 'Nunito';
   padding-left: 60px;
   font-weight: 600;
   text-align: left;
+  font-family: monospace;
 
 }
 .header{
   margin-top:50px;
   text-align: center;
+}
+.right{
+  font-style: cursive;
 }
 
