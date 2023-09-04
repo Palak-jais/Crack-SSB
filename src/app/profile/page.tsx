@@ -1,5 +1,6 @@
 import React from "react";
 import Layout from "../../../components/ui/layout";
+import {BiSolidUser} from 'react-icons/bi';
 export default function Profile(){
     return(
         <>

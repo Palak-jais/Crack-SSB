@@ -2,13 +2,12 @@ import React from 'react'
 import Link from 'next/link'
 import Layout from '../../../components/ui/layout'
 import Footer from '../../../components/ui/footer'
-import {BiSolidBot} from 'react-icons/bi'
 export default  function Explore(){
   const chatUrl:string="https://ssbchat.vercel.app/"
     return <>
     <Layout/>
-    <div className='text-center font-mono'>
-        <h1 className='text-center mb-10 text-2xl text-blue-700  font-bold'>
+    <div className='text-center '>
+        <h1 className='text-center mb-5 text-xl text-blue-700 font-bold font-mono md:text-2xl'>
             Explore to Ace your personality!
         </h1>
         <Link href={chatUrl} className='bg-blue-500 text-white  font-bold px-4 py-2 rounded-md mt-5 hover:opacity-75 m-5 font-mono'>Ask AI about SSB </Link>

@@ -12,9 +12,11 @@ export default function Home() {
        >
          <Layout/>
         <div className='header'>
-         <h1 className='text-3xl text-blue-700 font-semibold m-10'>Welcome to Crack SSB !</h1>
-         <Link href="/explore" className='bg-blue-500 text-white font-bold px-4 py-2 rounded-md mt-5 hover:opacity-75 m-5 font-mono'>Get Started for Free </Link>
-         <Link href={chatUrl} className='bg-blue-500 text-white font-bold px-4 py-2 rounded-md mt-5 hover:opacity-75 m-5 font-mono'>Ask AI about SSB </Link>
+         <h1 className='text-2xl text-blue-700 font-semibold m-10  md:text-3xl'>Welcome to Crack SSB!</h1>
+         <div className='text-center flex flex-col sm:block'>
+         <Link href="/explore" className='bg-blue-500 text-white font-bold px-2 py-2 rounded-md hover:opacity-75 ml-10 mr-10 mt-2 mb-2 font-mono sm: ml-5 mr-5 px-5'>Get Started for Free </Link>
+         <Link href={chatUrl} className='bg-blue-500 text-white font-bold px-2 py-2 rounded-md hover:opacity-75 ml-10 mr-10 mt-2 mb-2 font-mono sm: px-5 mr-5 ml-5'>Ask AI about SSB </Link>
+         </div>
         </div>
         <div className='typed'>
         <TypingEffect/>

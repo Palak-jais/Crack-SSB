@@ -34,8 +34,8 @@ function TypingEffect() {
   }, [currentIndex, currentStringIndex, stringsToType]);
 
   return (
-    <div className="p-10">
-      <h1 className='text-3xl text-blue-700 font-bold m-10 font-mono'>{typedText}</h1>
+    <div className="p-10 ">
+      <h1 className='text-xl text-blue-700 font-bold m-2 font-mono md:text-3xl md:10'>{typedText}</h1>
     </div>
   );
 }
