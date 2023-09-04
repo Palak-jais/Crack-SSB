@@ -30,7 +30,7 @@ import { useRouter } from "next/navigation";
    }
    return (
     <>
-    <div className="text-center">
+    <div className="text-center font-mono">
     <Layout/>
     <button className='bg-blue-500 text-white text-2xl font-bold px-4 py-2 rounded-md mt-5 hover:opacity-75 m-5' onClick={onLogout}>Log Out</button>
     </div>

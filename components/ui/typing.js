@@ -35,7 +35,7 @@ function TypingEffect() {
 
   return (
     <div className="p-10">
-      <h1 className='text-3xl text-blue-700 font-bold m-10'>{typedText}</h1>
+      <h1 className='text-3xl text-blue-700 font-bold m-10 font-mono'>{typedText}</h1>
     </div>
   );
 }

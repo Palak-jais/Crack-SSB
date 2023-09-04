@@ -4,7 +4,7 @@ export default function Profile(){
     return(
         <>
         <Layout/>
-        <div className="flex justify-between p-20">
+        <div className="flex justify-between p-20 font-mono">
             <div className="">
                 
                 <h1 className="text-2xl text-blue-700 font-bold">BASIC PROFILE</h1>
