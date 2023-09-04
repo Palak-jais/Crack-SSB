@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import Layout from '../../../components/ui/layout'
+import Footer from '../../../components/ui/footer'
 export default  function Explore(){
   const chatUrl:string="https://ssbchat.vercel.app/"
     return <>
@@ -107,5 +108,6 @@ export default  function Explore(){
       </div>
     </div>
    </div>
+   <Footer/>
    </>
 }
