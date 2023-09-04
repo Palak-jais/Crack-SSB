@@ -1,0 +1,44 @@
+
+.parent{
+    padding: 4%;
+    background-color: rgb(107, 165, 181);
+    min-height: fit-content;
+}
+.linkHeader{
+    font-size: 25px;
+    font-family:monospace;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+    color: whitesmoke;
+}
+.footerChild{
+    padding: 1%;
+}
+.links{
+    padding: 2%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    width:300px;    
+    margin: auto; 
+}
+.icons{
+    font-size: 25px;
+    color: whitesmoke;
+}
+.icons:hover{
+    opacity: .5;
+}
+.rights{
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    font-family:monospace;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: whitesmoke;
+}
+.right{
+    display: flex;
+}
