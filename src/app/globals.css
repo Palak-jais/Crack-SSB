@@ -1,7 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400&family=Roboto&display=swap");
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -28,19 +27,19 @@ font-family:monospace;
   height: 100vh;
 }
 .typed{
-  text-transform: uppercase;
   letter-spacing: 1px;
   height: 300px;
   padding: 20px;
   padding-left: 60px;
   font-weight: 600;
   text-align: left;
-  font-family: monospace;
+  font-family:monospace;
 
 }
 .header{
   margin-top:50px;
   text-align: center;
+  font-family:monospace;
 }
 .right{
   font-style: cursive;

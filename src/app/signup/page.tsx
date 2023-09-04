@@ -35,7 +35,7 @@ export default function Login(){
   }
     return(
         <>
-        <div className="align-center">
+        <div className="align-center font-mono">
           <Layout/>
             <div className="flex items-center justify-center h-screen text-md w-60vw">
                 <form className="p-5 w-80">
