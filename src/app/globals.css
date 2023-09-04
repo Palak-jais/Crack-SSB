@@ -20,7 +20,7 @@ body {
 font-family:monospace;
 }
 .custombg {
-  background-image: url('https://cdn.wallpapersafari.com/9/18/iLVBIR.jpg');
+  background-image: url('../../public/bgHome.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -30,18 +30,23 @@ font-family:monospace;
   letter-spacing: 1px;
   height: 300px;
   padding: 20px;
-  padding-left: 60px;
+  padding-left:18%;
   font-weight: 600;
   text-align: left;
   font-family:monospace;
 
 }
 .header{
-  margin-top:50px;
   text-align: center;
   font-family:monospace;
 }
 .right{
   font-style: cursive;
+}
+@media(max-width:600px){
+  .typed{
+  padding: 5px;
+  padding-left:5%;
+  }
 }
 

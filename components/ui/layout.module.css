@@ -1,0 +1,46 @@
+
+.routes{
+    display: flex;
+    font-family: monospace;
+    padding: 20px;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.dropdown{
+   padding: 2%;
+   color: blue;
+   font-size: 30px;
+   display: none;
+}
+.dropdown:hover{
+    opacity: .5;
+}
+.menu{
+    padding: 10px;
+    display: none;
+    padding: 10px;
+    transition: .5s;
+
+}
+.menuActive{
+    
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    transition: .5s;
+}
+@media(min-width:580px){
+    .menuActive{
+        display: none;
+    }
+}
+@media(max-width:580px){
+    .routes{
+        display:none;
+    }
+    .dropdown{
+         display: block;
+    }
+    
+}
