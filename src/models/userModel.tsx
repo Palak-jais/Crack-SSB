@@ -38,7 +38,22 @@ const userSchema=new mongoose.Schema({
         type:String,
         default:"Ex-Pune,Maharashtra"
     },
+    target:{
+        type:String,
+        default:"Ex-CDS"
+    },
+    profileImage:{
+        type: String,
+         default:`${process.env.IMAGE_DEFAULT}`
 
+    },
+    filename: 
+    { type: String,
+        default:"default image"
+         },
+    mimeType: { type: String},
+    size: { type: Number},
+    uploadDate: { type: Date, default: Date.now}
 })
 const User=mongoose.model("users",userSchema);
 
