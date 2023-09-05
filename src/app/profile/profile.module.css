@@ -1,0 +1,15 @@
+.userIcon{
+    border: 2px solid grey;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    padding: 2px;
+    margin: 10px;
+}
+.name{
+   text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(47, 97, 162);
+    text-transform: uppercase;
+}
