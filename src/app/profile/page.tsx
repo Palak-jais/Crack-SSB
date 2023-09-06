@@ -3,12 +3,14 @@ import React, { useEffect,useState } from "react";
 import axios from 'axios';
 import Layout from "../../../components/ui/layout";
 import styles from './profile.module.css';
+import Loader from "../../../components/ui/loader";
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
 import Swal from "sweetalert2";
 import { useRouter } from "next/navigation";
 export default function Profile(){
     const router=useRouter();
+    const[loading,setLoading]=useState(false);
     const[error,setError]=useState("");
     const[id,setId]=useState("");
     const[email,setEmail]=useState("");
@@ -26,6 +28,7 @@ export default function Profile(){
     const[updateGender,setUpdatedGender]=useState("");
     const getdata=async()=>{
           try{
+            setLoading(true);
             const res=await axios.get("/api/users/me");
             console.log(res);
             setId(res.data.data._id);
@@ -35,10 +38,18 @@ export default function Profile(){
             setAdress(res.data.data.Address);
             setGender(res.data.data.gender);
             setTarget(res.data.data.target);
-            setImage(res.data.data.profileImage);       
+            setImage(res.data.data.profileImage);  
+            setLoading(false);     
           }
           catch(err:any){
               console.log('error',err);
+              setLoading(false);
+              Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                confirmButtonColor: '#1e2f97',
+                text: "Error while Loading your data!",
+              })
           }
     }
     useEffect(()=>{
@@ -73,7 +84,7 @@ export default function Profile(){
             text: 'Updated Sucessfully!',
             confirmButtonColor: '#1e2f97',          
           })
-        router.refresh();
+          router.refresh();
        }
        catch(err:any){
         console.error(err);
@@ -102,8 +113,7 @@ export default function Profile(){
                 text: 'Updated Sucessfully!',
                 confirmButtonColor: '#1e2f97',          
               })
-            router.refresh();
-            router.push('/profile');
+             router.refresh();
            }
            catch(err:any){
             console.error('Error updating field:', err);
@@ -119,6 +129,7 @@ export default function Profile(){
     return(
         <>
         <Layout/>
+        {loading?<Loader/>:<p></p>}
         <div className={styles.parent} onClick={()=>setError("")}>
         <div>
         <h1 className="text-2xl text-blue-700 font-bold text-center">BASIC PROFILE</h1>
