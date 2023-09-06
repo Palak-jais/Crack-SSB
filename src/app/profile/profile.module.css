@@ -1,7 +1,7 @@
 .userIcon{
     border: 2px solid grey;
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     padding: 2px;
     margin: 10px;
@@ -12,4 +12,32 @@
     font-weight: 700;
     color: rgb(47, 97, 162);
     text-transform: uppercase;
+}
+.parent{
+    font-family: monospace;
+    display: flex;
+    padding: 6%;
+    margin: 6%;
+    justify-content: space-between;
+}
+.popup{
+    min-width:400px;
+}
+@media(max-width:700px){
+    .parent{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 3%;
+        margin: 3%;
+        
+    }
+    .userIcon{
+        border: 2px solid grey;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        padding: 2px;
+        margin: 10px;
+    }
 }
