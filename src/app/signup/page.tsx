@@ -8,9 +8,14 @@ export default function Login(){
     const [email,setEmail]=useState("");
     const [password,setPassword]=useState("");
     const[username,setUsername]=useState("");
+    const[error,setError]=useState("");
     const router=useRouter();
     const onSignup=async(e:any)=>{
      e.preventDefault();
+     if(password.length<8){
+        setError("Password must be more than 8 Char");
+        return;
+     }
       try{       
           const res=await axios.post("/api/users/signup",{username,email,password});
            console.log("sucesss",res.data);
@@ -38,7 +43,8 @@ export default function Login(){
         <div className="align-center font-mono">
           <Layout/>
             <div className="flex items-center justify-center h-screen text-md w-60vw">
-                <form className="p-5 w-80">
+                <form className="p-5 w-80" onClick={()=>setError("")}>
+                  <p className="text-center font-bold text-l text-[#FF0000]">{error}</p>
                 <h1 className="text-center text-xl text-blue-500 font-bold ">SIGN UP HERE 🎯</h1>
                 <input
                  className=" font-bold w-full py-2 px-4  mt-4 mb-4 border border-solid rounded-lg  border-gray-400 border-2"
