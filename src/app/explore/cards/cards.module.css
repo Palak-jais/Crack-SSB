@@ -1,0 +1,28 @@
+.img{
+    width: 250px;
+    height: 150px;
+}
+.info{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.popup{
+    width: 100%;
+    border: 1px solid grey;
+    background-color: antiquewhite;
+    padding: 2%;
+
+}
+.popupimg{
+    width: 500px;
+    height: 300px;
+    padding: 3%;
+}
+@media(max-width:600px){
+    .popupimg{
+        width: 300px;
+        height: 250px;
+        padding: 3%;
+    }
+}
