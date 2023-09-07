@@ -85,6 +85,7 @@ export default function Profile(){
             confirmButtonColor: '#1e2f97',          
           })
           router.refresh();
+          getdata();
        }
        catch(err:any){
         console.error(err);
@@ -114,6 +115,7 @@ export default function Profile(){
                 confirmButtonColor: '#1e2f97',          
               })
              router.refresh();
+             getdata();
            }
            catch(err:any){
             console.error('Error updating field:', err);
