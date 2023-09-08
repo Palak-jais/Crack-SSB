@@ -36,7 +36,34 @@ export default function Home() {
         />
         </div>
         </div>
-        </div>     
+        </div>    
+        <h1 className='text-center font-bold text-xl m-5 sm:mt-20'> OUR FEATURES</h1>
+        <div className='flex flex-wrap m-2 sm:m-5'>
+        <div className="lg:w-1/3 pr-4 pl-4 md:w-1/2 sm:w-1/2 p-2">
+    <div className='m-2 p-5 shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]'>
+         <h1 className='m-2 font-bold text-center'>DISCUSS</h1>
+         <p className='text-l font-bold p-2 text-[#808080]'>Discuss about topics as per sheduled timer as happening in ssb.</p>
+      </div>
+    </div>
+    <div className="lg:w-1/3 pr-4 pl-4 md:w-1/2 sm:w-1/2 p-2">
+    <div className='m-2 p-5 shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]'>
+         <h1 className='m-2 font-bold text-center'>LEARN</h1>
+         <p className='text-l font-bold p-2 text-[#808080]'>Discuss about topics as per sheduled timer as happening in ssb.</p>
+      </div>
+    </div> 
+    <div className="lg:w-1/3 pr-4 pl-4 md:w-1/2 sm:w-1/2 p-2">
+    <div className='m-2 p-5 shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]'>
+         <h1 className='m-2 font-bold text-center'>EXPLORE</h1>
+         <p className='text-l font-bold p-2 text-[#808080]'>Discuss about topics as per sheduled timer as happening in ssb.</p>
+      </div>
+    </div>
+    <div className="lg:w-1/3 pr-4 pl-4 md:w-1/2 sm:w-1/2 p-2">
+    <div className='m-2 p-5 shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]'>  
+         <h1 className='m-2 font-bold text-center'>PRACTICE</h1>
+         <p className='text-l font-bold p-2 text-[#808080]'>Discuss about topics as per sheduled timer as happening in ssb.</p>
+      </div>
+    </div>
+    </div>
       <Footer/>
     </main>
   )
