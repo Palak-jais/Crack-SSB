@@ -1,5 +1,4 @@
 import { getDataFromToken } from "@/dbcongig/getData";
-
  import { NextRequest,NextResponse } from "next/server";
  import User from "@/models/userModel";
  import { connect } from "@/dbcongig/dbconfig";
@@ -7,6 +6,7 @@ import { getDataFromToken } from "@/dbcongig/getData";
  export async function GET(request:NextRequest) {
     try{
         const userID=await getDataFromToken(request);
+        console.log(userID);
         const user=await User.findOne({_id:userID}).select("-password ");
         return NextResponse.json({
             message:"user found",

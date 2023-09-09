@@ -1,0 +1,40 @@
+const words=[
+    {
+        "statement":['Affection','Attack','Acheive','Fortune','Enemy','Unfair','Fault','Childhood','Action','Snake','sleep','went','Help','Need','Sympathy','Cooperate','Give','Beauty','Discipline','Duty','Make','Father','Cinema','Make','Money','piece','Science','Mother','Space','Knife','Alone','Rest','Decide','Fast','Enjoy','Love','Effect','Think','Attempt','Challenge','Solve','story','Books','Important','Rumour','Knowledge','Train','Space','Talk','Eat','General','Avoid','Short','Test','Find','Goal','Time','Natural','Reaction','Club'],
+        "id":202301
+    },
+    {
+        "statement":['Meeting','Aloof','Admire','Forgive','Empathy','Under','Family','Comment','Action','Snake','sleep','went','Help','Need','Sympathy','Cooperate','Give','Beauty','Discipline','Duty','Make','Father','Cinema','Make','Money','piece','Science','Mother','Space','Knife','Alone','Rest','Decide','Fast','Enjoy','Love','Effect','Think','Attempt','Challenge','Solve','story','Books','Important','Rumour','Knowledge','Train','Space','Talk','Eat','General','Avoid','Short','Test','Find','Goal','Time','Natural','Reaction','Club'],
+        "id":202302
+    },
+    {
+        "statement":['Attract','College','Acheive','Unable','Death','Upward','Shine','Often','Action','Snake','sleep','went','Help','Need','Sympathy','Cooperate','Give','Beauty','Discipline','Duty','Make','Father','Cinema','Make','Money','piece','Science','Mother','Space','Knife','Alone','Rest','Decide','Fast','Enjoy','Love','Effect','Think','Attempt','Challenge','Solve','story','Books','Important','Rumour','Knowledge','Train','Space','Talk','Eat','General','Avoid','Short','Test','Find','Goal','Time','Natural','Reaction','Club'],
+        "id":202303
+    },
+    {
+        "statement":['Forest','Graduate','Confuse','Death','Murder','Women','Crime','Health','Aloof','Snake','sleep','went','Help','Need','Sympathy','Cooperate','Give','Beauty','Discipline','Duty','Make','Father','Cinema','Make','Money','piece','Science','Mother','Space','Knife','Alone','Rest','Decide','Fast','Enjoy','Love','Effect','Think','Attempt','Challenge','Solve','story','Books','Important','Rumour','Knowledge','Train','Space','Talk','Eat','General','Avoid','Short','Test','Find','Goal','Time','Natural','Reaction','Club'],
+        "id":202304
+    },
+    {
+        "statement":['Oath','Fatigue','Empty','Travel','Honour','Team','Failure','Path','Proud','Snake','sleep','went','Help','Need','Sympathy','Cooperate','Give','Beauty','Discipline','Duty','Make','Father','Cinema','Make','Money','piece','Science','Mother','Space','Knife','Alone','Rest','Decide','Fast','Enjoy','Love','Effect','Think','Attempt','Challenge','Solve','story','Books','Important','Rumour','Knowledge','Train','Space','Talk','Eat','General','Avoid','Short','Test','Find','Goal','Time','Natural','Reaction','Club'],
+        "id":202305
+    },
+    {
+        "statement":['Accept','Defeat','Baby','Cry','Money','Accept','Result','Success','Action','Snake','sleep','went','Help','Need','Sympathy','Cooperate','Give','Beauty','Discipline','Duty','Make','Father','Cinema','Make','Money','piece','Science','Mother','Space','Knife','Alone','Rest','Decide','Fast','Enjoy','Love','Effect','Think','Attempt','Challenge','Solve','story','Books','Important','Rumour','Knowledge','Train','Space','Talk','Eat','General','Avoid','Short','Test','Find','Goal','Time','Natural','Reaction','Club'],
+        "id":202306
+    },
+    {
+        "statement":['Ahead','Happy','Easy','Notice','Friend','Against','View','Oath','Action','Murder','sleep','went','Help','Need','Sympathy','Cooperate','Give','Beauty','Discipline','Duty','Make','Father','Cinema','Make','Money','piece','Science','Mother','Space','Knife','Alone','Rest','Decide','Fast','Enjoy','Love','Effect','Think','Attempt','Challenge','Solve','story','Books','Important','Rumour','Knowledge','Train','Space','Talk','Eat','General','Avoid','Short','Test','Find','Goal','Time','Natural','Reaction','Club'],
+        "id":202307
+    },
+    {
+        "statement":['Duty','Difficult','Step','Leader','Foreign','Future','Love','Obey','Kill','Snake','sleep','went','Help','Need','Sympathy','Cooperate','Give','Beauty','Discipline','Duty','Make','Father','Cinema','Make','Money','piece','Science','Mother','Space','Knife','Alone','Rest','Decide','Fast','Enjoy','Love','Effect','Think','Attempt','Challenge','Solve','story','Books','Important','Rumour','Knowledge','Train','Space','Talk','Eat','General','Avoid','Short','Test','Find','Goal','Time','Natural','Reaction','Club'],
+        "id":202308
+    },
+    {
+        "statement":['Move','Perfect','Girl','Criticise','Media','Court','Against','Sex','Great','Vulgar','sleep','went','Help','Need','Sympathy','Cooperate','Give','Beauty','Discipline','Duty','Make','Father','Cinema','Make','Money','piece','Science','Mother','Space','Knife','Alone','Rest','Decide','Fast','Enjoy','Love','Effect','Think','Attempt','Challenge','Solve','story','Books','Important','Rumour','Knowledge','Train','Space','Talk','Eat','General','Avoid','Short','Test','Find','Goal','Time','Natural','Reaction','Club'],
+        "id":202309
+    },
+
+]
+export default words;

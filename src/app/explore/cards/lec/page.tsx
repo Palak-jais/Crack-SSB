@@ -11,11 +11,11 @@ export default function Gd(){
   return <>
   <Layout/>
   <div className='flex flex-wrap justify-center'>
-  <Link href='/explore/cards/srt' className='bg-blue-500 text-white  font-bold px-4 py-2 rounded-md mt-3 hover:opacity-75 m-1 font-mono'>Situation Reaction Test</Link>
-  <Link href='/explore/cards/gto' className='bg-blue-500 text-white  font-bold px-4 py-2 rounded-md mt-3 hover:opacity-75 m-1 font-mono'>Ground Task</Link>
   <Link href='/explore/cards/wat' className='bg-blue-500 text-white  font-bold px-4 py-2 rounded-md mt-3 hover:opacity-75 m-1 font-mono'>Word Association Test</Link>
   <Link href='/explore/cards/gd' className='bg-blue-500 text-white  font-bold px-4 py-2 rounded-md mt-3 hover:opacity-75 m-1 font-mono'>Ground Discussion</Link>
   <Link href='/explore/cards/ppdt' className='bg-blue-500 text-white  font-bold px-4 py-2 rounded-md mt-3 hover:opacity-75 m-1 font-mono'>Picture Perception and Description</Link>
+  <Link href='/explore/cards/srt' className='bg-blue-500 text-white  font-bold px-4 py-2 rounded-md mt-3 hover:opacity-75 m-1 font-mono'>Situation Reaction Test</Link>
+  <Link href='/explore/cards/gto' className='bg-blue-500 text-white  font-bold px-4 py-2 rounded-md mt-3 hover:opacity-75 m-1 font-mono'>Ground Task</Link>
   <Link href='/explore/cards/interview' className='bg-blue-500 text-white  font-bold px-4 py-2 rounded-md mt-3 hover:opacity-75 m-1 font-mono'>Interview</Link>
   </div>
   <h1 className='text-xl bg-blue-500 text-white  font-bold px-4 py-2 rounded-md mt-3 text-center font-mono'>LECTURETTE</h1>
@@ -34,7 +34,7 @@ export default function Gd(){
             <div>
             <Popup trigger={<button className='bg-blue-500 text-white px-4 py-2  rounded-md  hover:opacity-75'>Practice</button>} 
                modal>
-              <div className={styles.popuplec}>
+              <div className={styles.popup}>
               <h1 className='text-center font-bold text-[#808080]'>TOPIC</h1>
               <ol className='font-bold text-l p-5'>
                 <li>1.{topic.topic1}</li>

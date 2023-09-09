@@ -11,7 +11,6 @@ export default function Footer(){
           <footer>
               <div className={styles.parent}>
                 <div className={styles.footerChild}>
-                 <h2 className={styles.linkHeader}>Social Links</h2>
                  <div className={styles.links}>
         <h2 className={styles.icons}><a href="  https://www.instagram.com/palakjaiswal1041/"><BsInstagram/></a></h2>
         <h2 className={styles.icons}> <a href="https://www.linkedin.com/in/palak-jaiswal-121557254/"><BsLinkedin/></a></h2>
