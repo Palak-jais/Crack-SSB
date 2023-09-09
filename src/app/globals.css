@@ -53,6 +53,17 @@ min-height:fit-content ;
   display:flex;
   width: fit-content;
 }
+.userIcon{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  padding: 10px;
+  margin:auto;
+  
+}
+.contribute{
+  background-color: rgb(74, 116, 201);
+}
 @media(max-width:600px){
   .typed{
   height: 100px;

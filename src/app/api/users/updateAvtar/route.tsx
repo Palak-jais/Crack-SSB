@@ -4,6 +4,7 @@ import User from '@/models/userModel';
 connect();
 export async function PUT(request:NextRequest){
   try{
+    console.log("awerga3regw")
         const reqBody=await request.json();
         console.log(reqBody);
        await User.findByIdAndUpdate(reqBody._id,{profileImage:reqBody.profileImage},  { new: true });
