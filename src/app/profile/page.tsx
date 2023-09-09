@@ -58,11 +58,11 @@ export default function Profile(){
 
     const handleFileChange = (event:any) => {
         const file = event.target.files[0];
-        console.log(file);
+       // console.log(file);
         var reader=new FileReader();
         reader.readAsDataURL(file);
         reader.onload=()=>{
-          console.log(reader.result);
+         // console.log(reader.result);
           const res:any=reader.result;
           setUpdatedImage(res);
         }

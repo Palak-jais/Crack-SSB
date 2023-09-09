@@ -6,7 +6,7 @@ import { getDataFromToken } from "@/dbcongig/getData";
  export async function GET(request:NextRequest) {
     try{
         const userID=await getDataFromToken(request);
-        console.log(userID);
+        //console.log(userID);
         const user=await User.findOne({_id:userID}).select("-password ");
         return NextResponse.json({
             message:"user found",
