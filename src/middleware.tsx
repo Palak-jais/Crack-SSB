@@ -15,6 +15,10 @@ if(isPublicPath && token){
 if(!isPublicPath && !token && path!='/'){
     return NextResponse.redirect(new URL('/login',request.nextUrl))
 }
+if( !token && (path=='/profile'||path=='/logout')){
+  return NextResponse.redirect(new URL('/login',request.nextUrl))
+}
+
 }
 
 // See "Matching Paths" below to learn more
