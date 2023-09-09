@@ -30,7 +30,7 @@ export default function Profile(){
           try{
             setLoading(true);
             const res=await axios.get("/api/users/me");
-            console.log(res);
+            //console.log(res);
             setId(res.data.data._id);
             setEmail(res.data.data.email);
             setName(res.data.data.username);
