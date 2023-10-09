@@ -5,7 +5,7 @@ import Footer from '../../components/ui/footer'
 import Link from 'next/link'
 import Typewriter from 'typewriter-effect';
 export default function Home() {
-  const chatUrl:string="https://ssbchat.vercel.app/"
+  const chatUrl:string="https://botbliss.vercel.app/bot/ssb/chatSSBDefence%20651d3357ae9a8d623da7a9ca/"
   return (
     <main className="flex min-h-screen flex-col justify-between ">
       <div className='custombg'
